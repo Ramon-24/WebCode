@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* =============================================
+   CONFIGURAÇÕES - ESTILO WEBCODE
+   ============================================= */
+:root {
+  /* ========== FUNDOS ========== */
+  --bg-page: linear-gradient(#391580 0%, #2E0C70 24%, #3F1988 48%, #220360 100%);
+  --bg-divider: linear-gradient(90deg,
+      rgba(55, 19, 125, 0) 24%,
+      rgba(34, 3, 96, 0.07) 55%,
+      rgba(34, 3, 96, 1) 63%,
+      rgba(55, 19, 125, 0) 100%);
+
+  /* ========== NAVEGAÇÃO ========== */
+  --bg-navigation: linear-gradient(#8A55F2, #50318C);
+  --text-navigation: white;
+
+  /* ========== HERO SECTION ========== */
+  --bg-bubbles: linear-gradient(rgba(143, 91, 247, 0.6),
+      rgba(143, 91, 247, 1));
+  --border-bubbles: rgba(143, 91, 247, 0.88);
+  --bg-hero-button: linear-gradient(#8F5BF7 37%, #4A2495 100%);
+
+  /* ========== DÚVIDAS ========== */
+  --bg-doubt-box: rgba(86, 0, 255, 0.63);
+  --border-doubt-box: #391580;
+  --bg-doubt-highlight: rgba(52, 0, 154, 0.18);
+
+  /* ========== AVALIAÇÕES ========== */
+  --text-reviews: #000000;
+
+  /* ========== FOOTER ========== */
+  --bg-footer: linear-gradient(180deg, #220360 0%, #1E0059 50%, #0C0024 100%);
+
+  /* ========== CORES BASE ========== */
+  --purple-dark: #220360;
+  --purple-medium: #391580;
+  --purple-light: #8A55F2;
+  --purple-accent: #8F5BF7;
+  --purple-deep: #4A2495;
+}
+
+.botao-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 50px 0 16px;
+  z-index: 20;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card de configurações */
+.config-card {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .config-card {
+    margin: 1rem;
+  }
+
+  .config-options {
+    grid-template-columns: 1fr;
+  }
+
+  .config-toggle-btn {
+    bottom: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Efeitos de transição */
+/* .config-transition-enter {
+  opacity: 0;
+}
+
+.config-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.config-transition-exit {
+  opacity: 1;
+}
+
+.config-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+} */

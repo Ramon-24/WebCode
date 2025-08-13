@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ConfigProvider } from './Components/Configuracao';
 
 export const metadata = {
   title: "WebCode",
@@ -6,6 +7,7 @@ export const metadata = {
   keywords: "WebCode, tecnologia, manutenção de computadores, design, marketing, produção de vídeos, gerenciamento de redes sociais, desenvolvimento web",
   icons: {
     icon: "logo_webcode.jpeg",
+    // icon: "/LogoNav.png",
   },
   authors: [
     { name: "Ramon Brandão", url: "https://ramon-brandao.vercel.app/" },
@@ -34,8 +36,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="logo_webcode.jpeg" />
+      </head>
       <body>
-        {children}
+        <ConfigProvider>
+          {children}
+        </ConfigProvider>
       </body>
     </html>
   );
