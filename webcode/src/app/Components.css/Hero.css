@@ -1,0 +1,65 @@
+:root {
+  /* ========== FUNDOS ========== */
+  --bg-page: linear-gradient( #391580 0%, #2E0C70 24%, #3F1988 48%, #220360 100%);
+  --bg-divider: linear-gradient(90deg, 
+    rgba(55, 19, 125, 0) 24%, 
+    rgba(34, 3, 96, 0.07) 55%, 
+    rgba(34, 3, 96, 1) 63%, 
+    rgba(55, 19, 125, 0) 100%);
+  
+  /* ========== NAVEGAÇÃO ========== */
+  --bg-navigation: linear-gradient(#8A55F2, #50318C);
+  --text-navigation: #FFFFFF;
+  
+  /* ========== HERO SECTION ========== */
+  --bg-bubbles: linear-gradient(
+    rgba(143, 91, 247, 0.6), 
+    rgba(143, 91, 247, 1)
+  );
+  --border-bubbles: rgba(143, 91, 247, 0.88);
+  --text-hero: #FFFFFF;
+  --bg-hero-button: linear-gradient(90deg, #8F5BF7 37%, #4A2495 100%);
+  
+  /* ========== DÚVIDAS ========== */
+  --bg-doubt-box: rgba(86, 0, 255, 0.63);
+  --border-doubt-box: #391580;
+  --bg-doubt-highlight: rgba(52, 0, 154, 0.18);
+  
+  /* ========== AVALIAÇÕES ========== */
+  --text-reviews: #000000;
+  
+  /* ========== FOOTER ========== */
+  --bg-footer: linear-gradient(180deg, #220360 0%, #1E0059 50%, #0C0024 100%);
+  
+  /* ========== CORES BASE ========== */
+  --purple-dark: #220360;
+  --purple-medium: #391580;
+  --purple-light: #8A55F2;
+  --purple-accent: #8F5BF7;
+  --purple-deep: #4A2495;
+}
+
+
+.orcamento{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: var(--bg-hero-button);
+    /* color: var(--text-hero); */
+}
+
+.trabalhos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: bold;
+    /* font-size: 1.2rem; */
+    border: 1px solid #FFFFFF;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+}

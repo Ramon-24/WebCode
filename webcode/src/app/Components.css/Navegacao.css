@@ -9,7 +9,7 @@
   --color-border: rgba(255, 255, 255, 0.2);
   
   /* Efeitos */
-  --shadow-sm: 0 0 30px 1px #8f5bf7f1;
+  --shadow-sm: 0 0 10px 1px #8f5bf7f1;
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 22);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
   
@@ -30,8 +30,8 @@
   padding: 1.5rem 2rem;
   background: var(--color-bg);
   color: var(--color-text);
-  z-index: 1000;
-  box-shadow: var(--shadow-sm);
+  z-index: 10;
+  /* box-shadow: var(--shadow-sm); */
 }
 
 .nav-esquerda {
@@ -238,4 +238,24 @@
 
 [data-theme="dark"] .links:hover {
   color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var( --bg-page);
+  z-index: -1;
 }
