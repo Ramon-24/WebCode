@@ -22,7 +22,8 @@ export const Textos = {
         sobre: {
             titulo1: "O que a",
             titulo2: " webcode",
-            titulo3: " pode te proporcionar?",
+            titulo3: " pode",
+            titulo4: " te proporcionar?",
             descricao1: "A Webcode pode proporcionar a você soluções tecnológicas rápidas, seguras e personalizadas, garantindo que seu negócio esteja sempre online e funcionando no melhor desempenho.",
             descricao2: "Com um atendimento próximo e suporte especializado, cuidamos de cada detalhe para que você tenha mais tempo para focar no que realmente importa: o crescimento do seu projeto.",
             qualificacao: {
