@@ -11,7 +11,7 @@ export const metadata = {
   },
   authors: [
     { name: "Ramon Brandão", url: "https://ramon-brandao.vercel.app/" },
-    { name: "Ryan", url: "" }
+    { name: " Pedro Ryan", url: "https://pedroryan.vercel.app" }
   ],
   publisher: "WebCode",
 
