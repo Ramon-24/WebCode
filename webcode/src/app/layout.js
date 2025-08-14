@@ -6,8 +6,8 @@ export const metadata = {
   description: "A WebCode é uma empresa de tecnologia especializada em manutenção de computadores, design, marketing, produção de vídeos, gerenciamento de redes sociais desenvolvimento web, oferecendo soluções inovadoras e personalizadas para atender às necessidades dos nossos clientes.",
   keywords: "WebCode, tecnologia, manutenção de computadores, design, marketing, produção de vídeos, gerenciamento de redes sociais, desenvolvimento web",
   icons: {
-    icon: "logo_webcode.jpeg",
-    // icon: "/LogoNav.png",
+    // icon: "logo_webcode.jpeg",
+    icon: "/LogoNav.png",
   },
   authors: [
     { name: "Ramon Brandão", url: "https://ramon-brandao.vercel.app/" },
