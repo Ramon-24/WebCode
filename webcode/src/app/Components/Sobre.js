@@ -39,7 +39,7 @@ export function Sobre() {
 
     if (!t) return null;
     return (
-        <section className="hero"
+        <section className="hero" id="sobre"
             style={{
                 display: 'flex',
                 flexDirection: isMobile ? 'column' : 'row',
@@ -93,10 +93,10 @@ export function Sobre() {
 
 
 
-                    <p style={{ textAlign: "justify", fontSize: isMobile ? '0.8rem' : '0.9rem', fontWeight: '300', width: '35vw', transform: isMobile ? 'translateY(0)' : 'translateY(-20px)', margin: '25px 0 25px 0' }}>
+                    <p style={{ textAlign: "justify", fontWeight: '400', width: '35vw', transform: isMobile ? 'translateY(0)' : 'translateY(-20px)', margin: '25px 0 25px 0' }}>
                         {t.descricao1}
                     </p>
-                    <p style={{ textAlign: "justify", fontSize: isMobile ? '0.8rem' : '0.9rem', fontWeight: '300', width: '35vw', transform: isMobile ? 'translateY(0)' : 'translateY(-20px)' }}>
+                    <p style={{ textAlign: "justify", fontWeight: '400', width: '35vw', transform: isMobile ? 'translateY(0)' : 'translateY(-20px)' }}>
                         {t.descricao2}
                     </p>
 
@@ -105,7 +105,7 @@ export function Sobre() {
 
 
                         <div>
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -116,7 +116,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Suporte} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -127,7 +127,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Soluções} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -138,7 +138,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Segurança} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -152,7 +152,7 @@ export function Sobre() {
 
                         <div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -163,7 +163,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Desempenho} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -174,7 +174,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Acompanhamento} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"
@@ -185,7 +185,7 @@ export function Sobre() {
                                 <p>{t.qualificacao.Profissionais} <br /></p>
                             </div>
 
-                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", alignItems: "center" }}>
+                            <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
                                     alt="Logo WebCode"

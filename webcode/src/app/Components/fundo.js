@@ -3,6 +3,8 @@ import { Navegacao } from "./Navegacao";
 import { Hero } from "./Hero";
 import { BarraGradent } from "./BarraGradent";
 import { Sobre } from "./Sobre";
+import { CarrosselServicos } from "./CarrosselServicos";
+import { Textos } from "../Components/Textos";
 
 export function Fundo() {
     return (
@@ -12,12 +14,125 @@ export function Fundo() {
             <Hero />
             <BarraGradent />
             <Sobre />
+            <div style={{ fontSize: "1px" }}>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+                <h6>.</h6>
+            </div>
+            <CarrosselServicos />
 
 
 
-
-
-            <div style={{fontSize: "1px"}}>
+            <div style={{ fontSize: "1px" }}>
                 <h6>.</h6>
                 <h6>.</h6>
                 <h6>.</h6>

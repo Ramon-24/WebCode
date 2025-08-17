@@ -89,6 +89,17 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para IE e Edge */
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
 }
 
 

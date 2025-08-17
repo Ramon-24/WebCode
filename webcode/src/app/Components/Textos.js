@@ -39,19 +39,37 @@ export const Textos = {
         },
         servicos: {
             titulo: "Serviços Prestados",
+            saibaMais: "Saiba mais",
             cards: [
                 {
-                    // imagem: "/",
-                    titulo: "Desenvolvimento Web",
-                    descricao: "Criação de sites e sistemas personalizados, otimizados para SEO e responsivos."
+                    titulo: "Formatação de dispositivos",
+                    descricao: "Formatação rápida e segura de computadores.",
+                    imagem: "/cap.png"
                 },
                 {
-                    // imagem: "/",
-                    titulo: "Hospedagem de Sites",
-                    descricao: "Hospedagem rápida, segura e com suporte técnico especializado."
+                    titulo: "Desenvolvimento Web",
+                    descricao: "Criação de sites personalizados e otimizados.",
+                    imagem:"/cap.png"
+
                 },
+                {
+                    titulo: "Hospedagem de Sites",
+                    descricao: "Hospedagem rápida e segura com suporte especializado.",
+                    imagem:"/cap.png"
+                },
+                {
+                    titulo: "Suporte Técnico",
+                    descricao: "Suporte técnico especializado para resolver problemas rapidamente.",
+                    imagem:"/cap.png"
+                },
+                {
+                    titulo: "Consultoria de TI",
+                    descricao: "Consultoria para otimizar seus processos tecnológicos.",
+                    imagem:"/cap.png"
+                }
             ]
         },
+
         perguntasFrequentes: {
             titulo: "Ficou com alguma dúvida?",
             perguntas: [

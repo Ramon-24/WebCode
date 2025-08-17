@@ -262,3 +262,7 @@
   z-index: 1;
   /* padding: 20px; */
 }
+
+.fundo::-webkit-scrollbar {
+  width: 0px; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+}
