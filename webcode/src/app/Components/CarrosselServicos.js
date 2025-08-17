@@ -203,7 +203,7 @@ export function CarrosselServicos() {
                     background: #8F5BF7;
                     border: 3px solid white;
                     transform: scale(1.2);
-                    margin-top: -10px;
+                    margin-top: -12px;
                 }
                 
                 .custom-nav {
