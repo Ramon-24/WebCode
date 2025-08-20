@@ -124,7 +124,7 @@ export function Hero() {
             <div>
                 <Image
                     src="/hero.png"
-                    alt="Logo WebCode"
+                    alt="Imagem do Hero"
                     width={950}
                     height={950}
                     className="logo-imagem"

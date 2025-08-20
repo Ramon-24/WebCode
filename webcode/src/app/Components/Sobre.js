@@ -108,7 +108,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -119,7 +119,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -130,7 +130,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -141,7 +141,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 30px 5px 0", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -155,7 +155,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -166,7 +166,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -177,7 +177,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
@@ -188,7 +188,7 @@ export function Sobre() {
                             <div style={{display: "flex", flexDirection: "row", padding: "5px 0 5px 15px", gap: "8px", alignItems: "center" }}>
                                 <Image
                                     src="/correto.png"
-                                    alt="Logo WebCode"
+                                    alt="Icone de Correto"
                                     width={20}
                                     height={20}
                                     className="logo-imagem"
