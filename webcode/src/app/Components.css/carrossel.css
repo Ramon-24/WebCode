@@ -1,0 +1,151 @@
+.servicos-section {
+    padding: 20px 10px;
+}
+
+.carrossel-container {
+    position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.coverflow-swiper {
+    padding: 30px 0; /* menos espaço */
+    /* padding: 70px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide-custom {
+    transition: all 0.4s ease;
+    filter: blur(3px);
+    opacity: 1;
+    /* transform: scale(1.6); */
+    transform: scale(1.1); /* menos zoom */
+}
+
+.swiper-slide-active {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1.2) !important;
+    z-index: 10;
+}
+
+.card-container {
+    position: relative;
+    width: 600px;
+    height: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #8F5BF7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #7a4ad6;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10%;
+}
+
+.custom-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(143, 91, 247, 0.5);
+    border-radius: 50%;
+    margin: 0 6px !important;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination{
+    top: 435px !important;
+    left: 0 !important;
+    right: 0 !important;
+    text-align: center;
+}
+
+.custom-bullet.swiper-pagination-bullet-active {
+    background: #8F5BF7;
+    border: 3px solid white;
+    transform: scale(1.2);
+    margin-top: -12px;
+}
+
+.custom-nav {
+    color: #8F5BF7;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    position: static;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-nav:hover {
+    color: #6e3fd3;
+}
+
+.custom-nav::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        height: 350px;
+    }
+
+    .swiper-slide-custom {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    .coverflowEffect {
+        scale: 1 !important;
+    }
+}
