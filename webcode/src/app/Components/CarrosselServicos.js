@@ -46,7 +46,7 @@ export function CarrosselServicos() {
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 0,
-                        depth: 900,
+                        depth: 800,
                         modifier: 1,
                         slideShadows: false,
                         scale: isMobile ? 1 : 0.8, // Cards laterais menores
@@ -105,7 +105,7 @@ export function CarrosselServicos() {
                     
                 .carrossel-container {
                     position: relative;
-                    max-width: 100%;
+                    max-width: 100vw;
                     margin: 0 auto;  
                 }
                         
@@ -203,7 +203,7 @@ export function CarrosselServicos() {
                     background: #8F5BF7;
                     border: 3px solid white;
                     transform: scale(1.2);
-                    margin-top: -12px;
+                    margin-top: 0px;
                 }
                 
                 .custom-nav {
