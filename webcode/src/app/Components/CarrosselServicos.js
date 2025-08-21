@@ -1,9 +1,8 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination, Mousewheel } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../Components.css/carrossel.css";
@@ -39,19 +38,11 @@ export function CarrosselServicos() {
 
             <div className="carrossel-container">
                 <Swiper
-                    effect="coverflow"
                     grabCursor={true}
                     centeredSlides={true}
                     slidesPerView={isMobile ? 1 : 3}
-                    initialSlide={1} // Começa com o slide central ativo
-                    coverflowEffect={{
-                        rotate: 0,
-                        stretch: 0,
-                        depth: 800,
-                        modifier: 1,
-                        slideShadows: false,
-                        scale: isMobile ? 1 : 0.8, // Cards laterais menores
-                    }}
+                    spaceBetween={isMobile ? 10 : 30}
+                    initialSlide={1}
                     navigation={{
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -59,17 +50,14 @@ export function CarrosselServicos() {
                     pagination={{
                         clickable: true,
                         el: '.swiper-pagination',
-                        renderBullet: (index, className) => {
-                            return `<span class="${className} custom-bullet"></span>`;
-                        },
                     }}
                     mousewheel={{
                         forceToAxis: true,
                         invert: false,
                         sensitivity: 1,
                     }}
-                    modules={[EffectCoverflow, Navigation, Pagination, Mousewheel]}
-                    className="coverflow-swiper"
+                    modules={[Navigation, Pagination, Mousewheel]}
+                    className="custom-swiper"
                 >
                     {t.cards.map((card, index) => (
                         <SwiperSlide key={index} className="swiper-slide-custom">
@@ -80,10 +68,10 @@ export function CarrosselServicos() {
                                     className="card-image"
                                 />
                                 <div className="card-content">
-                                    <h3 className="card-title">{card.titulo}</h3>
+                                    <h3 className="card-subtitle">{card.titulo}</h3>
                                     <p className="card-description">{card.descricao}</p>
                                     <button className="card-button">
-                                        {t.saibaMais} →
+                                        <strong>{t.saibaMais} →</strong>
                                     </button>
                                 </div>
                             </div>
@@ -91,14 +79,13 @@ export function CarrosselServicos() {
                     ))}
                 </Swiper>
 
-                {/* Navegação personalizada */}
+                {/* Navegação */}
                 <div className="navigation-container">
-                    <div className="swiper-button-prev custom-nav"></div>
+                    <div className="swiper-button-prev custom-nav">‹</div>
                     <div className="swiper-pagination"></div>
-                    <div className="swiper-button-next custom-nav"></div>
+                    <div className="swiper-button-next custom-nav">›</div>
                 </div>
             </div>
-
         </section>
     );
 }
