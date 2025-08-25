@@ -52,11 +52,6 @@ export const Textos = {
                     imagem: "/web.png"
                 },
                 {
-                    titulo: "Hospedagem de Sites",
-                    descricao: "Oferecemos hospedagem estável e segura para o seu site, com suporte especializado, backups automáticos, monitoramento constante e garantia de alta disponibilidade.",
-                    imagem: "/cap.png"
-                },
-                {
                     titulo: "Suporte Técnico",
                     descricao: "Atendimento rápido e especializado para resolver problemas técnicos em computadores, redes e sistemas. Nossa equipe garante que sua infraestrutura funcione sem interrupções.",
                     imagem: "/Suporte.png"
@@ -168,17 +163,58 @@ export const Textos = {
         },
         servicos: {
             titulo: "Services Provided",
+            saibaMais: "Learn more",
             cards: [
                 {
-                    // imagem: "/",
-                    titulo: "Web Development",
-                    descricao: "Creation of personalized websites and systems, optimized for SEO and responsive."
+                    titulo: "Formatting Devices",
+                    descricao: "We perform complete formatting of computers, laptops, and other devices, ensuring a clean, fast, and secure system. We include driver installation, custom settings, and performance optimization.",
+                    imagem: "/Formatação.png"
                 },
                 {
-                    // imagem: "/",
-                    titulo: "Website Hosting",
-                    descricao: "Fast, secure hosting with specialized technical support."
+                    titulo: "Web Development",
+                    descricao: "We create modern, responsive, and optimized websites to provide the best user experience. We work on everything from landing pages to complete systems, aligned with your brand's visual identity and focused on performance.",
+                    imagem: "/web.png"
                 },
+                {
+                    titulo: "Technical Support",
+                    descricao: "Quick and specialized support to solve technical problems in computers, networks, and systems. Our team ensures that your infrastructure operates without interruptions.",
+                    imagem: "/Suporte.png"
+                },
+                {
+                    titulo: "IT Consulting",
+                    descricao: "We analyze and plan customized solutions to optimize your company's technological processes. We assist in the selection of software, improvements in infrastructure, and increased digital security.",
+                    imagem: "/Consutoria.png"
+                },
+                {
+                    titulo: "Process Automation",
+                    descricao: "We develop systems and scripts that automate repetitive tasks, reducing costs and increasing productivity. Ideal for companies seeking efficiency and agility.",
+                    imagem: "/automação.png"
+                },
+                {
+                    titulo: "Mobile Development",
+                    descricao: "We create functional and intuitive applications for Android and iOS, whether for internal use within your company or for the general public. Always focusing on modern design and performance.",
+                    imagem: "/Mobile.png"
+                },
+                {
+                    titulo: "Database Management",
+                    descricao: "We offer configuration, maintenance, and optimization of databases, ensuring integrity, security, and high performance in the storage of critical information for your business.",
+                    imagem: "/dados.png"
+                },
+                {
+                    titulo: "Creation of Visual Identity",
+                    descricao: "We assist in building or renewing your company's visual identity by developing logos, color palettes, and graphic elements that reinforce credibility and highlight your brand in the market.",
+                    imagem: "/Visual.png"
+                },
+                {
+                    titulo: "Preventive Maintenance",
+                    descricao: "We perform regular maintenance on equipment and systems to prevent failures, extend the lifespan of devices, and ensure greater stability and safety in the daily operations of your company.",
+                    imagem: "/Manutenção.png"
+                },
+                {
+                    titulo: "Video Editing and Production",
+                    descricao: "We produce and edit high-quality institutional, commercial, and promotional videos, helping your company to communicate professionally and attractively on social media and marketing campaigns.",
+                    imagem: "/Videos.png"
+                }
             ]
         },
         perguntasFrequentes: {
@@ -244,17 +280,58 @@ export const Textos = {
         },
         servicos: {
             titulo: "Servicios Prestados",
+            saibaMais: "Saber más",
             cards: [
                 {
-                    // imagem:"/",
-                    titulo: "Desarrollo Web",
-                    descricao: "Creación de sitios web y sistemas personalizados, optimizados para SEO y responsivos."
+                    titulo: "Formateo de Dispositivos",
+                    descricao: "Realizamos la formateo completo de computadoras, portátiles y otros dispositivos, garantizando un sistema limpio, rápido y seguro. Incluimos la instalación de controladores, configuraciones personalizadas y optimización del rendimiento.",
+                    imagem: "/Formatação.png"
                 },
                 {
-                    // imagem:"/",
-                    titulo: "Alojamiento de Sitios Web",
-                    descricao: "Alojamiento rápido, seguro y con soporte técnico especializado."
+                    titulo: "Desarrollo Web",
+                    descricao: "Creamos sitios modernos, responsivos y optimizados para ofrecer la mejor experiencia al usuario. Trabajamos desde páginas de aterrizaje hasta sistemas completos, alineados con la identidad visual de su marca y enfocados en el rendimiento.",
+                    imagem: "/web.png"
                 },
+{
+                    titulo: "Soporte Técnico",
+                    descricao: "Atención rápida y especializada para resolver problemas técnicos en computadoras, redes y sistemas. Nuestro equipo garantiza que su infraestructura funcione sin interrupciones.",
+                    imagem: "/Suporte.png"
+                },
+                {
+                    titulo: "Consultoría de TI",
+                    descricao: "Analizamos y planificamos soluciones personalizadas para optimizar los procesos tecnológicos de su empresa. Ayudamos en la elección de software, mejoras en la infraestructura y aumento de la seguridad digital.",
+                    imagem: "/Consutoria.png"
+                },
+{
+                    titulo: "Automatización de Procesos",
+                    descricao: "Desarrollamos sistemas y scripts que automatizan tareas repetitivas, reduciendo costos y aumentando la productividad. Ideal para empresas que buscan eficiencia y agilidad.",
+                    imagem: "/automação.png"
+                },
+                {
+                    titulo: "Desarrollo Móvil",
+                    descricao: "Creamos aplicaciones funcionales e intuitivas para Android e iOS, ya sea para el uso interno de su empresa o para el público en general. Siempre con un enfoque en un diseño moderno y rendimiento.",
+                    imagem: "/Mobile.png"
+                },
+                {
+                    titulo: "Gestión de Base de Datos",
+                    descricao: "Ofrecemos configuración, mantenimiento y optimización de bases de datos, garantizando integridad, seguridad y alto rendimiento en el almacenamiento de información crítica para su negocio.",
+                    imagem: "/dados.png"
+                },
+                {
+                    titulo: "Creación de Identidad Visual",
+                    descricao: "Ayudamos en la construcción o renovación de la identidad visual de su empresa, desarrollando logotipos, paletas de colores y elementos gráficos que refuercen la credibilidad y destaquen su marca en el mercado.",
+                    imagem: "/Visual.png"
+                },
+                {
+                    titulo: "Mantenimiento Preventivo",
+                    descricao: "Realizamos mantenimientos regulares en equipos y sistemas para evitar fallos, prolongar la vida útil de los dispositivos y garantizar una mayor estabilidad y seguridad en el día a día de su empresa.",
+                    imagem: "/Manutenção.png"
+                },
+                {
+                    titulo: "Edición y Producción de Videos",
+                    descricao: "Producimos y editamos videos institucionales, comerciales y promocionales de alta calidad, ayudando a su empresa a comunicarse de manera profesional y atractiva en las redes sociales y campañas de marketing.",
+                    imagem: "/Videos.png"
+                }
             ]
         },
         perguntasFrequentes: {
