@@ -42,30 +42,59 @@ export const Textos = {
             saibaMais: "Saiba mais",
             cards: [
                 {
-                    titulo: "Formatação de dispositivos",
-                    descricao: "Formatação rápida e segura de computadores.",
-                    imagem: "/cap.png"
+                    titulo: "Formatação de Dispositivos",
+                    descricao: "Realizamos a formatação completa de computadores, notebooks e outros dispositivos, garantindo um sistema limpo, rápido e seguro. Incluímos instalação de drivers, configurações personalizadas e otimização do desempenho.",
+                    imagem: "/Formatação.png"
                 },
                 {
                     titulo: "Desenvolvimento Web",
-                    descricao: "Criação de sites personalizados e otimizados.",
-                    imagem:"/cap.png"
-
+                    descricao: "Criamos sites modernos, responsivos e otimizados para oferecer a melhor experiência ao usuário. Trabalhamos desde landing pages até sistemas completos, alinhados à identidade visual da sua marca e com foco em performance.",
+                    imagem: "/image.png"
                 },
                 {
                     titulo: "Hospedagem de Sites",
-                    descricao: "Hospedagem rápida e segura com suporte especializado.",
-                    imagem:"/cap.png"
+                    descricao: "Oferecemos hospedagem estável e segura para o seu site, com suporte especializado, backups automáticos, monitoramento constante e garantia de alta disponibilidade.",
+                    imagem: "/cap.png"
                 },
                 {
                     titulo: "Suporte Técnico",
-                    descricao: "Suporte técnico especializado para resolver problemas rapidamente.",
-                    imagem:"/cap.png"
+                    descricao: "Atendimento rápido e especializado para resolver problemas técnicos em computadores, redes e sistemas. Nossa equipe garante que sua infraestrutura funcione sem interrupções.",
+                    imagem: "/cap.png"
                 },
                 {
                     titulo: "Consultoria de TI",
-                    descricao: "Consultoria para otimizar seus processos tecnológicos.",
-                    imagem:"/cap.png"
+                    descricao: "Analisamos e planejamos soluções personalizadas para otimizar os processos tecnológicos da sua empresa. Ajudamos na escolha de softwares, melhorias em infraestrutura e aumento da segurança digital.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Automação de Processos",
+                    descricao: "Desenvolvemos sistemas e scripts que automatizam tarefas repetitivas, reduzindo custos e aumentando a produtividade. Ideal para empresas que buscam eficiência e agilidade.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Desenvolvimento Mobile",
+                    descricao: "Criamos aplicativos funcionais e intuitivos para Android e iOS, seja para uso interno da sua empresa ou para o público em geral. Sempre com foco em design moderno e performance.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Gerenciamento de Banco de Dados",
+                    descricao: "Oferecemos configuração, manutenção e otimização de bancos de dados, garantindo integridade, segurança e alto desempenho no armazenamento de informações críticas para o seu negócio.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Criação de Identidade Visual",
+                    descricao: "Auxiliamos na construção ou renovação da identidade visual da sua empresa, desenvolvendo logotipos, paletas de cores e elementos gráficos que reforçam a credibilidade e destacam sua marca no mercado.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Manutenção Preventiva",
+                    descricao: "Fazemos manutenções regulares em equipamentos e sistemas para evitar falhas, prolongar a vida útil dos dispositivos e garantir maior estabilidade e segurança no dia a dia da sua empresa.",
+                    imagem: "/cap.png"
+                },
+                {
+                    titulo: "Edição e Produção de Vídeos",
+                    descricao: "Produzimos e editamos vídeos institucionais, comerciais e promocionais de alta qualidade, ajudando sua empresa a se comunicar de forma profissional e atrativa nas redes sociais e campanhas de marketing.",
+                    imagem: "/cap.png"
                 }
             ]
         },
@@ -174,7 +203,7 @@ export const Textos = {
 
 
 
-    
+
 
     es: {
         nav: {

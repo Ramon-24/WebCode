@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { useConfig } from "./Configuracao";
 import { Textos } from "../Components/Textos";
 import { TituloSecao } from "./TituloSecao";
+import Link from "next/link";
 
 export function CarrosselServicos() {
     const { config } = useConfig();
@@ -70,9 +71,9 @@ export function CarrosselServicos() {
                                 <div className="card-content">
                                     <h3 className="card-subtitle">{card.titulo}</h3>
                                     <p className="card-description">{card.descricao}</p>
-                                    <button className="card-button">
+                                    <Link href="/contato" className="card-button">
                                         <strong>{t.saibaMais} →</strong>
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
