@@ -49,7 +49,7 @@ export const Textos = {
                 {
                     titulo: "Desenvolvimento Web",
                     descricao: "Criamos sites modernos, responsivos e otimizados para oferecer a melhor experiência ao usuário. Trabalhamos desde landing pages até sistemas completos, alinhados à identidade visual da sua marca e com foco em performance.",
-                    imagem: "/image.png"
+                    imagem: "/web.png"
                 },
                 {
                     titulo: "Hospedagem de Sites",
@@ -59,42 +59,42 @@ export const Textos = {
                 {
                     titulo: "Suporte Técnico",
                     descricao: "Atendimento rápido e especializado para resolver problemas técnicos em computadores, redes e sistemas. Nossa equipe garante que sua infraestrutura funcione sem interrupções.",
-                    imagem: "/cap.png"
+                    imagem: "/Suporte.png"
                 },
                 {
                     titulo: "Consultoria de TI",
                     descricao: "Analisamos e planejamos soluções personalizadas para otimizar os processos tecnológicos da sua empresa. Ajudamos na escolha de softwares, melhorias em infraestrutura e aumento da segurança digital.",
-                    imagem: "/cap.png"
+                    imagem: "/Consutoria.png"
                 },
                 {
                     titulo: "Automação de Processos",
                     descricao: "Desenvolvemos sistemas e scripts que automatizam tarefas repetitivas, reduzindo custos e aumentando a produtividade. Ideal para empresas que buscam eficiência e agilidade.",
-                    imagem: "/cap.png"
+                    imagem: "/automação.png"
                 },
                 {
                     titulo: "Desenvolvimento Mobile",
                     descricao: "Criamos aplicativos funcionais e intuitivos para Android e iOS, seja para uso interno da sua empresa ou para o público em geral. Sempre com foco em design moderno e performance.",
-                    imagem: "/cap.png"
+                    imagem: "/Mobile.png"
                 },
                 {
                     titulo: "Gerenciamento de Banco de Dados",
                     descricao: "Oferecemos configuração, manutenção e otimização de bancos de dados, garantindo integridade, segurança e alto desempenho no armazenamento de informações críticas para o seu negócio.",
-                    imagem: "/cap.png"
+                    imagem: "/dados.png"
                 },
                 {
                     titulo: "Criação de Identidade Visual",
                     descricao: "Auxiliamos na construção ou renovação da identidade visual da sua empresa, desenvolvendo logotipos, paletas de cores e elementos gráficos que reforçam a credibilidade e destacam sua marca no mercado.",
-                    imagem: "/cap.png"
+                    imagem: "/Visual.png"
                 },
                 {
                     titulo: "Manutenção Preventiva",
                     descricao: "Fazemos manutenções regulares em equipamentos e sistemas para evitar falhas, prolongar a vida útil dos dispositivos e garantir maior estabilidade e segurança no dia a dia da sua empresa.",
-                    imagem: "/cap.png"
+                    imagem: "/Manutenção.png"
                 },
                 {
                     titulo: "Edição e Produção de Vídeos",
                     descricao: "Produzimos e editamos vídeos institucionais, comerciais e promocionais de alta qualidade, ajudando sua empresa a se comunicar de forma profissional e atrativa nas redes sociais e campanhas de marketing.",
-                    imagem: "/cap.png"
+                    imagem: "/Videos.png"
                 }
             ]
         },

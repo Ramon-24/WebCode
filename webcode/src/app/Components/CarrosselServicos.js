@@ -34,7 +34,7 @@ export function CarrosselServicos() {
     if (!t) return null;
 
     return (
-        <section className="servicos-section">
+        <section id="servicos" className="servicos-section">
             <TituloSecao texto={t.titulo} />
 
             <div className="carrossel-container">
