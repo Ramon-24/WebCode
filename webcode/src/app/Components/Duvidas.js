@@ -68,7 +68,7 @@ export function Duvidas() {
                     {t.perguntas.map((item, index) => (
                         <div key={index} className="faqItem">
                             <button
-                                className="faqQuestion"
+                                className="faqQuestion" style={{ color:'white' }}
                                 onClick={() => toggleAccordion(index)}
                                 aria-expanded={activeIndex === index}
                             >
