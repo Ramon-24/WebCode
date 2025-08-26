@@ -1,0 +1,179 @@
+/* Duvidas.css */
+.duvidas {
+    position: relative;
+    min-height: 100vh;
+    top: 150px;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titulo_duvidas {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+    color: white;
+}
+
+.background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4); Overlay escuro para melhor contraste */
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    z-index: 3;
+    /* Coloca o conteúdo acima da imagem e do overlay */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* Restante do CSS permanece igual, mas ajuste cores para contraste */
+.faqContainer {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.655);
+    /* Fundo semi-transparente */
+    backdrop-filter: blur(10px);
+}
+
+.faqItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faqItem:last-child {
+    border-bottom: none;
+}
+
+.faqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    color: #2d3748;
+    /* Cor escura para contraste */
+    transition: background-color 0.2s ease;
+}
+
+.faqQuestion:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* color: #3182ce; Azul para contraste */
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.faqAnswer {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.faqAnswer p {
+    padding: 0 1.5rem 1.5rem;
+    margin: 0;
+    line-height: 1.6;
+    color: #2d3748;
+    /* Cor escura para contraste */
+}
+
+.stillHaveQuestions {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contactButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--bg-hero-button);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.contactButton h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contactButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ajuste de cores para o título */
+.duvidas :global(.titulo-secao) {
+    color: white !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .duvidas {
+        padding: 2rem 0;
+        min-height: 80vh;
+    }
+
+    .faqQuestion {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .faqAnswer p {
+        padding: 0 1.25rem 1.25rem;
+    }
+
+    .contactButton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .contactButton h1 {
+        font-size: 1.1rem;
+    }
+
+    .contactButton svg {
+        width: 20px;
+        height: 20px;
+    }
+}

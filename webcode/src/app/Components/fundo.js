@@ -5,6 +5,7 @@ import { BarraGradent } from "./BarraGradent";
 import { Sobre } from "./Sobre";
 import { CarrosselServicos } from "./CarrosselServicos";
 import { Textos } from "../Components/Textos";
+import { Duvidas } from "./Duvidas";
 
 export function Fundo() {
     return (
@@ -129,7 +130,7 @@ export function Fundo() {
                 <h6>.</h6>
             </div>
             <CarrosselServicos />
-
+            <Duvidas />
 
 
             <div style={{ fontSize: "1px" }}>
