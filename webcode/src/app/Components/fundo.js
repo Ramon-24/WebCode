@@ -6,6 +6,7 @@ import { Sobre } from "./Sobre";
 import { CarrosselServicos } from "./CarrosselServicos";
 import { Textos } from "../Components/Textos";
 import { Duvidas } from "./Duvidas";
+import { Projetos } from "./Projetos";
 
 export function Fundo() {
     return (
@@ -131,7 +132,7 @@ export function Fundo() {
             </div>
             <CarrosselServicos />
             <Duvidas />
-
+            <Projetos/>
 
             <div style={{ fontSize: "1px" }}>
                 <h6>.</h6>

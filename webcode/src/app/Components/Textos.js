@@ -112,6 +112,125 @@ export const Textos = {
             ],
             botao: "Ainda tenho dúvidas?"
         },
+
+
+        projetos: {
+            titulo: "Alguns Projetos WebCode",
+            filtros: ["Todos", "Web", "Mobile", "Outros"],
+            lista: [
+                {
+                    nome: "Multimídia Conecta+",
+                    descricao: "Controla empréstimos, devoluções e histórico de alunos, evitando perdas de livros. Em reformulação com novo design, análise de dados e perfis de usuários.",
+                    status: "Equipe, sendo refeito Individualmente",
+                    categoria: "Web",
+                    imagem: "/Multimeios.png",
+                    tecnologias: ["Node.js", "Express", "React", "Vite", "ThunderClient", "MySQL", "phpMyAdmin", "Bootstrap", "Devicon"],
+                    links: [
+                        {
+                            nome: "Repositório",
+                            url: "https://github.com/Ramon-24/Epgwa.Biblioteca",
+                            svg:
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                        },
+                        {
+                            nome: "Figma",
+                            url: "https://www.figma.com/design/1zVI0wTpIatPfchkodyjRM/Multimeios-Conecta-?node-id=1-2&p=f&t=oQayHBR88UqNfUAw-0",
+                            svg:
+                                <i className="devicon-figma-plain" />
+                        }
+                    ]
+                },
+                {
+                    nome: "Gamefic",
+                    descricao: "Landing page de uma startup educacional que une gamificação, leitura infantil e tecnologia, com kits físicos e histórias interativas para aproximar crianças dos livros e dos pais.",
+                    status: "Equipe",
+                    categoria: "Web",
+                    imagem: "/Gamefic4.png", // Atualize para o caminho real da imagem
+                    tecnologias: ["Next.js", "Vercel", "Bootstrap", "Devicon", "NPM", "i18next"],
+                    links: [
+                        {
+                            nome: "Repositório",
+                            url: "https://github.com/Ramon-24/Gamefic",
+                            svg:
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                        },
+                        {
+                            nome: "Demo",
+                            url: "https://gamefic.vercel.app",
+                            svg: <i className="devicon-nextjs-original" />
+                        }
+                    ]
+                },
+                {
+                    nome: "Automação com Gestos",
+                    descricao: "Projeto de automação com visão computacional que reconhece gestos das mãos via webcam para controlar o computador. Apresentado na Semana da TI como forma interativa de ensinar automação, sem uso de slides.",
+                    status: "Equipe",
+                    categoria: "Outros",
+                    imagem: "/projetos/automacao-gestos.jpg", // Você pode substituir por uma imagem simbólica, como uma ilustração de gestos ou automação
+                    tecnologias: ["Python", "OpenCV", "PyAutoGUI", "Mediapipe"],
+                    links: [
+                        {
+                            nome: "Repositório",
+                            url: "https://github.com/Ramon-24/robo",
+                            svg:
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                        }
+                    ]
+                },
+                {
+                    nome: "Random Questy",
+                    descricao: "Aplicativo que possui um sorteio, um contador, um jogo de adivinha números, além de cadastro, login e histórico. Está sendo refeito por mim para melhorar o design, garantir responsividade real e aprofundar o uso da plataforma, incluindo lógica customizada com código.",
+                    status: "Equipe, melhorias individualmente",
+                    categoria: "Mobile",
+                    imagem: "/Random.png", // Substitua por uma imagem ou mockup atualizado
+                    tecnologias: ["FlutterFlow", "SupaBase"],
+                    links: [
+                        {
+                            nome: "Demo",
+                            url: "https://gamefic.vercel.app",
+                            svg: <i className="devicon-flutter-plain" />
+                        }
+                    ]
+                },
+                {
+                    nome: "Portfólio Pessoal",
+                    descricao: "Focado em performance, acessibilidade e design responsivo. Inclui multi-idiomas, modo claro/escuro, animações e formulário de contato. Em constante atualização.",
+                    status: "Em desenvolvimento contínuo",
+                    categoria: "Web",
+                    imagem: "/Portifolio.png",
+                    tecnologias: [
+                        "Next.js", "Vercel", "i18next", "Framer_Motion", "EmailJS", "Bootstrap", "Devicon",
+                    ],
+                    links: [
+                        {
+                            nome: "Repositório",
+                            url: "https://github.com/Ramon-24/Ramon_brandao",
+                            svg:
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                </svg>
+                        },
+                        {
+                            nome: "Figma",
+                            url: "https://www.figma.com/design/qI6Kpt6wHTyVFNQOZKOF74/Portifolio?node-id=0-1&p=f&t=fjzYlHexB8Cgn9YT-0",
+                            svg:
+                                <i className="devicon-figma-plain" />
+                        },
+                        {
+                            nome: "Demo",
+                            url: "https://ramon-brandao.vercel.app",
+                            svg: <i className="devicon-nextjs-original" />
+                        }
+                    ]
+                },
+            ]
+        },
     },
 
 

@@ -102,7 +102,7 @@ export function Configuracao() {
                     onClick={() => setMostrarConfig(true)}
                     aria-label={traducoes[config.idioma].configuracoes}
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style={{ cursor: "pointer",}} fill="currentColor" className="bi bi-nut" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" style={{ cursor: "pointer", }} fill="currentColor" className="bi bi-nut" viewBox="0 0 16 16">
                         <path d="m11.42 2 3.428 6-3.428 6H4.58L1.152 8 4.58 2zM4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1z" />
                         <path d="M6.848 5.933a2.5 2.5 0 1 0 2.5 4.33 2.5 2.5 0 0 0-2.5-4.33m-1.78 3.915a3.5 3.5 0 1 1 6.061-3.5 3.5 3.5 0 0 1-6.062 3.5z" />
                     </svg>
@@ -112,7 +112,10 @@ export function Configuracao() {
             {mostrarConfig && (
                 <div className="overlay">
                     <div className="config-card">
-                        <div>
+                        <div
+                            style={{
+                                display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', borderBottom: '1px solid #ccc', fontWeight: '600', fontSize: '1.2rem'
+                            }}>
                             <h1>{traducoes[config.idioma].configuracoes}</h1>
                             <button
                                 className="botao-fechar"
@@ -125,8 +128,13 @@ export function Configuracao() {
                         </div>
 
                         <div>
-                            <h2>{traducoes[config.idioma].tema}</h2>
-                            <div>
+                            <h2 style={{ padding: "5%", fontWeight: '500', fontSize: '1.2rem' }}>
+                                {traducoes[config.idioma].tema}
+                            </h2>
+                            <div
+                                style={{
+                                    display: 'flex', justifyContent: "space-evenly", alignItems: 'center',marginBottom: '5px', fontWeight: '400', fontSize: '1rem',
+                                }}>
                                 <button
                                     className={`opcao-botao ${config.tema === 'light' ? 'ativo' : ''}`}
                                     onClick={() => mudarTema('light')}
@@ -143,8 +151,13 @@ export function Configuracao() {
                         </div>
 
                         <div>
-                            <h2>{traducoes[config.idioma].idioma}</h2>
-                            <div>
+                            <h2 style={{ padding: "5%", fontWeight: '500', fontSize: '1.2rem' }}>
+                                {traducoes[config.idioma].idioma}
+                            </h2>
+                            <div
+                                style={{
+                                    display: 'flex', justifyContent: "space-evenly", alignItems: 'center', marginBottom: '25px', padding: '10px', fontWeight: '400', fontSize: '1rem',
+                                }}>
                                 <button
                                     className={`opcao-botao ${config.idioma === 'pt' ? 'ativo' : ''}`}
                                     onClick={() => mudarIdioma('pt')}

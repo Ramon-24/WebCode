@@ -1,0 +1,317 @@
+.barra-container {
+  /* Layout e Espaçamento */
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  
+  /* Estilo Visual */
+  background-color: #8F5BF7; /* Azul médio como fallback */
+  color: white; /* Texto sempre branco para contraste */
+  border-radius: 50px; /* Formato completamente arredondado */
+  font-size: 0.875rem; /* 14px - tamanho padrão para tags */
+  
+  /* Efeitos e Transições */
+  box-shadow: 0 1px 6px #8F5BF7; /* Sombra sutil da paleta */
+  transition: all 0.3s ease; /* Transição suave para hover */
+  
+  /* Tipografia */
+  font-weight: 500; /* Semi-bold para melhor legibilidade */
+  line-height: 1; /* Espaçamento compacto */
+  text-align: center;
+}
+
+.barra-container:hover {
+  transform: translateY(-3px); /* Efeito de levitação */
+  box-shadow: 0 0px 6px #8F5BF7; /* Brilho com cor de destaque */
+  cursor: pointer; /* Indica interatividade */
+}
+
+
+
+
+
+
+
+
+
+
+
+.filtro-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: #8F5BF7;
+  /* Cor de borda como fundo padrão */
+  color: white;
+  /* Texto secundário */
+  transition: all 0.5s ease;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Estado hover */
+.filtro-btn:hover {
+  background-color: #4A2495;
+  /* Azul médio */
+  box-shadow: 0 2px 8px #000000;
+  /* Sombra azul clara */
+  transform: translateY(-3px);
+  color: white;
+}
+
+.filtro-btn.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.filtro-btn:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.filtro-btn:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.filtro-btn:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.filtro-btn:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Estado ativo/selecionado */
+.filtro-btn.ativo {
+  background-color: #4A2495;
+  /* Cor secundária */
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--effect-glow);
+  /* Efeito glow */
+  transform: scale(1.05);
+}
+
+/* Hover no estado ativo */
+.filtro-btn.ativo:hover {
+  box-shadow: 0 2px 8px var(--color-primary-4);
+  background-color: #4A2495;
+}
+
+/* Foco para acessibilidade */
+.filtro-btn:focus,
+.linkItem:focus {
+  outline: 2px solid #4A2495;
+  outline-offset: 2px;
+}
+
+/**
+ * STATUS INDICATORS
+ * 
+ * Cores para diferentes status de projetos
+ */
+.status-individual {
+  background-color: #4A2495;
+  /* Azul médio */
+}
+
+.status-equipe {
+  background-color: #4A2495;
+  /* Azul mais claro */
+}
+
+.status-padrao {
+  background-color: #8F5BF7;
+  /* Azul muito claro */
+}
+
+
+
+
+/**
+ * CONTAINER PRINCIPAL DE PROJETOS
+ * 
+ * Área que contém os cards roláveis de projetos
+ */
+.Projetos-scroll {
+  position: relative;
+  overflow: hidden;
+  padding: 0 65px 90px 50px;
+  /* background-color: white; */
+}
+/* .Projetos {
+  background-color: white;
+} */
+
+/**
+ * CONTAINER DE SCROLL
+ * 
+ * Área rolável horizontal com os cards
+ */
+.projeto-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 25px 12px;
+  scrollbar-width: none;
+  /* Esconde scrollbar no Firefox */
+}
+
+/* Esconde scrollbar no Chrome/Safari */
+.projeto-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Centraliza quando há apenas um card */
+.projeto-scroll:only-child,
+.projeto-scroll:has(.cards:only-child) {
+  justify-content: center;
+}
+
+
+
+
+.cards {
+  min-width: 360px;
+  max-width: 360px;
+  width: 360px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+
+.cards:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 1px 20px #8F5BF7;
+  border: 2px solid #8F5BF7;
+  z-index: 2;
+  transition: transform 0.5s cubic-bezier(.4, 0, .2, 1),
+    box-shadow 0.5s cubic-bezier(.4, 0, .2, 1),
+    border 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+
+.imagemContainer {
+  overflow: hidden;
+  position: relative;
+  height: 240px;
+  border-radius: 20px 20px 0 0;
+}
+
+.cardProjet-imagem {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+
+.cards:hover .cardProjet-imagem {
+  transform: scale(1.07);
+  transition: transform 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+
+
+.spanCard {
+  position: absolute;
+  font-size: 0.85rem;
+  top: 12px;
+  right: 1rem;
+  color: white;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  background: #4a2495c9;
+  padding: 2rem 1.5rem;
+  gap: 0.5rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-nome {
+  font-size: 1.4rem;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.card-descricao {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+
+.cards:hover .card-nome,
+.cards:hover .card-descricao {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+
+.barras-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.Cardlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding-top: 8px;
+}
+
+.linkItem {
+  gap: 0.15rem;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.linkItem:hover {
+  transform: translateX(5px);
+  color: #8F5BF7;
+}
+
+.Cardsvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+.nomeRede {
+  display: inline-block;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width: 500px) {
+  .cards {
+    min-width: 90vw;
+    max-width: 90vw;
+    width: 90vw;
+  }
+
+  .Projetos-scroll {
+    padding: 0 20px;
+  }
+}

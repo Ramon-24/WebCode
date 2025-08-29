@@ -8,13 +8,15 @@ export function TituloSecao({ texto }) {
     const ultima = palavras[palavras.length - 1];     // última palavra
 
     return (
-        <div className="titulo-secao">
-            <h2>
-                <span className="texto-normal">{primeira}</span>{" "}
-                <span className="texto-destaque">{ultima}</span>
-            </h2>
-            <div className="linha-embaixo"></div>
-        </div>
+        <section className="titulo-secao-container">
+            <div className="titulo-secao">
+                <h2>
+                    <span className="texto-normal">{primeira}</span>{" "}
+                    <span className="texto-destaque">{ultima}</span>
+                </h2>
+                <div className="linha-embaixo"></div>
+            </div>
+        </section>
     );
 }
 

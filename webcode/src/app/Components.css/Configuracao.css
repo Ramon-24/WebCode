@@ -83,11 +83,11 @@
   .config-card {
     margin: 1rem;
   }
-
+  
   .config-options {
     grid-template-columns: 1fr;
   }
-
+  
   .config-toggle-btn {
     bottom: 1rem;
     right: 1rem;
@@ -95,6 +95,27 @@
     height: 48px;
   }
 }
+
+
+.opcao-botao {
+  min-width: 30%;
+  background: var(--bg-page);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.opcao-botao.ativo {
+  background: var(--bg-hero-button);
+  border: 2px solid white;
+  box-shadow: 0 4px 18px rgba(143, 91, 247, 0.6);
+  font-weight: 600;
+}
+
 
 /* Efeitos de transição */
 /* .config-transition-enter {
