@@ -1,0 +1,374 @@
+/* Container principal */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    width: 100%;
+    transform: translateY(-10px);
+    flex-shrink: 0;
+}
+
+/* Formulário */
+.contact-form {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 600px;
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid #4A2495;
+    opacity: 0;
+    transform: translateY(20px);
+    box-shadow: 0 10px 30px rgba(123, 26, 120, 0.15);
+}
+
+.contact-form:hover {
+    border-color: #8F5BF7;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(123, 26, 120, 0.25);
+}
+
+.contact-form.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Título do formulário */
+.form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #391580 !important;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    position: relative;
+    transition: all 0.6s ease;
+}
+
+.contact-form:hover .form-title {
+    transform: translateY(4px);
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    color: #391580 !important;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    transform-origin: left;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transform: translateY(-20px);
+}
+
+.contact-form:hover .title-underline {
+    transform: scaleX(1.6) translateY(-8px);
+}
+
+/* Grupos de campos */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #391580;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Campos de entrada */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #391580;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: #ffffff;
+    color: #391580;
+    font-family: inherit;
+}
+
+.form-group:focus-within .form-label {
+    color: #391580;
+    transform: translateY(-2px);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #391580;
+    box-shadow: 2px 2px 0 1px #4a249598;
+    transform: translateY(-2px);
+}
+
+.form-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Botão de envio */
+.form-submit {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(90deg, #391580, #4A2495);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-submit:hover {
+    background: linear-gradient(90deg, #391580, #4A2495);
+    transform: translateY(-3px);
+    border: 1px solid white;
+    box-shadow: 0 8px 25px rgba(123, 26, 120, 0.3);
+}
+
+.form-submit:active {
+    transform: translateY(0);
+}
+
+/* Efeito de ripple no botão */
+.form-submit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.form-submit:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Popup de confirmação */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+.config-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 2px solid #391580;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 40px 20px;
+    }
+
+    .contact-form {
+        padding: 30px;
+        min-width: unset;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px 15px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .form-title {
+        font-size: 1.4rem;
+    }
+    
+    .form-input,
+    .form-textarea {
+        padding: 12px;
+    }
+    
+    .form-submit {
+        padding: 16px;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para a área de contato */
+.Area-contato {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.Inf-contato {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.Inf-contato h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.Inf-contato p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.Inf-cards-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Inf-card-contato {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(123, 26, 120, 0.1);
+}
+
+.Inf-card-contato:hover {
+    transform: translateY(-3px);
+    border-color: #4A2495;
+    box-shadow: 0 8px 25px rgba(123, 26, 120, 0.15);
+}
+
+.icone-circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4A2495, #391580);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icone-circulo svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+
+.Inf-text-contato h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #2d3748;
+}
+
+.Inf-text-contato p {
+    font-size: 0.95rem;
+    color: #718096;
+    margin: 4px 0 0;
+    word-break: break-word;
+}
+
+@media (max-width: 1024px) {
+    .Area-contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .Inf-contato {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .Inf-card-contato {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .Area-contato {
+        gap: 30px;
+    }
+    
+    .Inf-contato h1 {
+        font-size: 1.8rem;
+    }
+    
+    .Inf-card-contato {
+        padding: 15px;
+    }
+    
+    .icone-circulo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icone-circulo svg {
+        width: 20px;
+        height: 20px;
+    }
+}
